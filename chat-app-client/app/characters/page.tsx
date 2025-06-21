@@ -115,18 +115,14 @@ export default function CharactersPage() {
 
   const handleCharacterSelect = (characterName: string) => {
     // Check if there's existing chat data
-    const existingChatHistory = localStorage.getItem("chatHistory")
-    const existingSessionId = localStorage.getItem("sessionId")
-    const existingCharacter = localStorage.getItem("currentCharacter")
+     localStorage.removeItem("chatHistory")
+      localStorage.removeItem("sessionId")
+      localStorage.removeItem("currentCharacter")
+      localStorage.removeItem("userGender")
 
-    if (existingChatHistory || existingSessionId || existingCharacter) {
-      // Don't allow character change if there's existing data
-      alert("You have an active chat session. Please leave the current chat to select a new character.")
-      return
-    }
-
-    setSelectedCharacter(characterName)
-    setShowGenderDialog(true)
+      // Set the new character
+      setSelectedCharacter(characterName)
+      setShowGenderDialog(true)
   }
 
   const handleGenderSubmit = () => {
