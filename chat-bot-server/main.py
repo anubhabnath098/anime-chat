@@ -216,3 +216,7 @@ async def chat(req: ChatRequest):
     hist.append({"role": "user",      "content": req.message})
     hist.append({"role": "assistant", "content": reply})
     return {"session_id": sid, "reply": reply}
+
+@app.get("/")
+async def root():
+    return {"message": "Welcome to Anime-Chat API"}
