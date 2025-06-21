@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Send, RotateCcw, Home } from "lucide-react" // Only import icons actually used for buttons/UI, not character-specific ones
+import { Send, RotateCcw, Home } from "lucide-react"
 import { useRouter } from "next/navigation"
 
 interface Message {

@@ -166,9 +166,9 @@ export default function CharactersPage() {
             </Button>
           </div>
           <div className="text-center">
-            <h1 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
-              Choose Your Character
-            </h1>
+           <h1 className="text-3xl md:text-6xl font-bold text-purple-500 mb-4">
+                Choose Your Character
+          </h1>
             <p className="text-lg md:text-xl text-gray-300">Select an anime character to start your conversation</p>
           </div>
         </div>
